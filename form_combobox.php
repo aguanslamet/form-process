@@ -9,7 +9,7 @@
 <body>
     <?php
     //koneksi ke database
-    $con = mysqli_connect("localhost","sapa","melbu","trik");
+    $con = mysqli_connect("localhost","SIAPA","MASUK","TARIK");
     $query = "SELECT * FROM countries";
     $sql = mysqli_query($con, $query);
     ?>
@@ -17,7 +17,7 @@
         <select name="negara">
             <?php
             while ($data = mysqli_fetch_array($sql)) {
-                echo '<option value="$data[id]">'.$data['negara'].'</option>';
+                echo '<option value="$data[id]">'.$data['NEGARA'].'</option>';
             }
             ?>
         </select>
