@@ -9,7 +9,7 @@
 <body>
     <?php
     //koneksi ke database
-    $con = mysqli_connect("localhost","sapa","melbu","trik");
+    $con = mysqli_connect("localhost","SIAPA","MASUK","TARIK");
     $query = "SELECT * FROM countries";
     $sql = mysqli_query($con, $query);
     ?>
